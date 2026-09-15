@@ -137,7 +137,7 @@ function renderLogoIcon(iconUrl = '', fallbackIcon = 'cloud') {
   return `<div class="logo-icon"><span class="material-icons-round">${fallbackIcon}</span></div>`;
 }
 
-function renderHTML(content, title = 'R2 云盘') {
+function renderHTML(content, title = 'Genshin Impact Aim') {
   return `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -1110,20 +1110,8 @@ function renderHTML(content, title = 'R2 云盘') {
 <body>
 ${content}
 
-<footer class="foot-bar">
-  <span class="version-info" id="versionInfo" title="检查更新">
-    <span>v1.2.1</span>
-    <span class="version-badge" id="versionBadge">有新版本</span>
-    <span class="version-tooltip" id="versionTooltip">
-      <div class="version-tooltip-title">版本更新检查</div>
-      <div class="version-tooltip-body" id="versionTooltipBody">正在检查...</div>
-      <a class="version-tooltip-link" id="versionTooltipLink" href="https://github.com/HandsomeMJZ/R2-Cloud-Drive" target="_blank" rel="noopener noreferrer">前往 GitHub 查看 →</a>
-    </span>
-  </span>
-  <span class="foot-bar-sep">|</span>
-  <a href="https://github.com/HandsomeMJZ" target="_blank" rel="noopener noreferrer">Github@HandsomeMJZ</a>
-  <span class="foot-bar-sep">|</span>
-  <span>用户存储之内容需符合当地法律法规，本程序不承担法律责任。</span>
+  <footer class="foot-bar">
+  <span>TG:@Genshin_Impact_Aim | QQ群:1124571330</span>
 </footer>
 
 <div class="snackbar" id="snackbar">
@@ -3338,7 +3326,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </html>`;
 }
 
-function renderLoginPage(error = '', siteTitle = 'R2 云盘', cloudIconUrl = '', loginBackgroundUrl = '') {
+function renderLoginPage(error = '', siteTitle = 'Genshin Impact Aim', cloudIconUrl = '', loginBackgroundUrl = '') {
   const bgUrl = String(loginBackgroundUrl || '').trim();
   const loginBg = bgUrl
     ? `<img class="login-bg-image" src="${escapeAttr(bgUrl)}" alt="" aria-hidden="true">`
@@ -6819,7 +6807,7 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname;
     const R2 = env.R2_BUCKET;
-    const siteTitle = env.SITE_TITLE || 'R2 云盘';
+    const siteTitle = env.SITE_TITLE || 'Genshin Impact Aim';
     const cloudIconUrl = env.CLOUD_ICON_URL || '';
     const loginBackgroundUrl = env.LOGIN_BACKGROUND_URL || '';
 
